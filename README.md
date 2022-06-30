@@ -1,6 +1,6 @@
 # hello-world
 
-## Test - 1
+## Test - 2
 
 This repo provides a simple Hello World sample project for Spring Boot.
 
