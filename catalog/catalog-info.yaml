@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: hello-world
+  name: tap-hello-world
   description: Hello World sample project for Spring Boot
   tags:
   - java
@@ -9,7 +9,7 @@ metadata:
   - cloud-foundry
   - tanzu
   annotations:
-    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=hello-world'
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=tap-hello-world'
 spec:
   type: service
   lifecycle: experimental
