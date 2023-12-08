@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: tap-hello-world
-  description: Hello World sample project for Spring Boot
+  description: Hello World sample project for Spring Boot with TAP
   tags:
   - java
   - spring
