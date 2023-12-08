@@ -11,6 +11,9 @@ metadata:
   annotations:
     'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=tap-hello-world'
     janus-idp.io/tekton-enabled : 'true'
+    backstage.io/kubernetes-id: 'tap-hello-world'
+    backstage.io/kubernetes-namespace: 'd1'
+    janus-idp.io/tekton: 'tap-hello-world'
 spec:
   type: service
   lifecycle: experimental
