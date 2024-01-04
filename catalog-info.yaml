@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: tap-hello-world
+  description: Hello World sample project for Spring Boot with TAP (1)
+  tags:
+  - java
+  - spring
+  - cloud-foundry
+  - tanzu
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=tap-hello-world'
+    janus-idp.io/tekton-enabled : 'true'
+    backstage.io/kubernetes-id: 'tap-hello-world'
+    backstage.io/kubernetes-namespace: 'd1'
+    janus-idp.io/tekton: 'tap-hello-world'
+spec:
+  type: service
+  lifecycle: experimental
+  owner: default-team

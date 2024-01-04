@@ -1,0 +1,19 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: springboot-tsm
+  namespace: dev
+spec:
+  hosts:
+  - "springboot.tsm.h2o-2-19271.h2o.vmware.com"
+  gateways:
+  - dev-gateway
+  http:
+  - match:
+    - uri:
+        prefix: /
+    route:
+    - destination:
+        port:
+          number: 80
+        host: spring-boot-postgres-tsm
