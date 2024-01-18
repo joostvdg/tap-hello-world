@@ -12,6 +12,6 @@ public class HelloWorldController {
 
 	@RequestMapping("/")
 	public String index() {
-		return "Hello " + message + ". It is great to be here, on January 31st";
+		return "Hello " + message + ". It is great to be here, on January 18th, 2024!";
 	}
 }
