@@ -12,6 +12,11 @@ public class HelloWorldController {
 
 	@RequestMapping("/")
 	public String index() {
-		return "Hello " + message + ". It is great to be here, on January 18th, 2024![2]";
+		String date = "2021-10-13";
+		// if env ALT_DATE is set, use that for date
+		if (System.getenv("ALT_DATE") != null) {
+			date = System.getenv("ALT_DATE");
+		}
+		return "Hello " + message + ". It is great to be here, on "+ date + "!";
 	}
 }
