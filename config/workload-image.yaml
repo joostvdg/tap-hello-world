@@ -1,0 +1,23 @@
+---
+apiVersion: carto.run/v1alpha1
+kind: Workload
+metadata:
+  labels:
+    app.kubernetes.io/part-of: hello-image
+    apps.tanzu.vmware.com/workload-type: server
+  name: hello-image
+  namespace: dev
+spec:
+  image: harbor.tap.h2o-2-19271.h2o.vmware.com/tap-apps/hello-tsm-dev
+  env:
+    - name: APP_MESSAGE
+      value: "image workload"
+  params:
+    - name: gitops_ssh_secret
+      value: gitlab-https
+    - name: ports
+      value:
+        - containerPort: 8080
+          name: http
+          port: 80
+  
