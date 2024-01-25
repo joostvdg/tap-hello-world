@@ -17,6 +17,6 @@ public class HelloWorldController {
 		if (System.getenv("ALT_DATE") != null) {
 			date = System.getenv("ALT_DATE");
 		}
-		return "Hello " + message + ". It is great to be here, on "+ date + ". This is a test of the emergency broadcast system - Test8.";
+		return "Hello " + message + ". It is great to be here, on "+ date + ". This is a test of the emergency broadcast system - Test9.";
 	}
 }
