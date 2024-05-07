@@ -22,6 +22,6 @@ public class HelloWorldController {
         + message
         + ". It is great to be here, on "
         + date
-        + ". This is a test of the emergency broadcast system - Test9.";
+        + ". This is a test of the emergency broadcast system - Test10.";
   }
 }
